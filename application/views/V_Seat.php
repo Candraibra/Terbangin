@@ -151,13 +151,11 @@
 
 			<div class="seat">
 				<?php for ($i = 1; $i <= $seat['seat_total']; $i++) : ?>
-
 				<?php if (count($seat['seat_bookeds']) !== 0) : ?>
 					<?php if (in_array($i, $seat['seat_bookeds'])) : ?>
 				<div id="<?php echo $i ?>" class="seat-id seat-notavailabe">
 					<p><?php echo $i ?></p>
 				</div>
-
 					<?php else : ?>
 				<div onclick="sget(this.id)" id="<?php echo $i ?>" class="seat-id">
 					<p><?php echo $i ?></p>
@@ -168,11 +166,7 @@
 					<p><?php echo $i ?></p>
 				</div>
 				<?php endif; ?>
-
-				
-
 				<?php endfor; ?>
-
 			</div>
 
 		</div>

@@ -67,7 +67,8 @@ class Search extends CI_Controller
 			}
 
 		} else {
-			redirect(base_url());
+
+			$this->load->view('V_Search_ngasal');
 		}
 	}
 }
